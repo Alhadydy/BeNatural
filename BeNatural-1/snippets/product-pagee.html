@@ -1,0 +1,604 @@
+<html lang="en">
+<head>
+    <!-- Document metadata and external resources (fonts, icons, styles, scripts) -->
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BeNatural</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&amp;display=swap" rel="stylesheet">
+
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../images/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    
+    <!-- Icon libraries -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.5.0/remixicon.min.css">
+
+    <!-- App script and CSS (bundled preview assets) -->
+    <script type="module" src=""></script>
+    <link rel="stylesheet" href="../css/Tailwind.css">
+</head>
+<body>
+    <div id="root">
+        <!-- Page wrapper -->
+        <div class="min-h-screen bg-white">
+            <!-- Header / Navigation -->
+            <header class="bg-white shadow-sm sticky top-0 z-30 transition-transform duration-300 ">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="flex justify-between items-center h-16">
+                        <!-- Logo/Brand Name -->
+                        <a class="flex items-center" href="index.html">
+                            <h1 class="text-2xl font-bold text-rose-600" style="font-family: Pacifico, serif;">BeNatural</h1>
+                        </a>
+
+                        <!-- Desktop Navigation Menu -->
+                        <nav class="hidden md:flex space-x-8">
+                            <a href="../index.html" class="text-gray-700 hover:text-rose-600 transition-colors cursor-pointer">Home</a>
+                            <a href="products.html" class="text-gray-700 hover:text-rose-600 transition-colors cursor-pointer">Skincare</a>
+                            <a href="products.html" class="text-gray-700 hover:text-rose-600 transition-colors cursor-pointer">Haircare</a>
+                            <a href="products.html" class="text-gray-700 hover:text-rose-600 transition-colors cursor-pointer">Body Care</a>
+                            <a href="#about" class="text-gray-700 hover:text-rose-600 transition-colors cursor-pointer">About</a>
+                            <a href="#contact" class="text-gray-700 hover:text-rose-600 transition-colors cursor-pointer">Contact</a>
+                        </nav>
+
+                        <!-- Desktop Utility Icons (Search, Cart) and Call to Action Button -->
+                        <div class="hidden md:flex items-center space-x-4">
+                            <!-- Search Icon -->
+                            
+                            <!-- <div class="w-6 h-6 flex items-center justify-center cursor-pointer">
+                                <i class="ri-search-line text-gray-600 hover:text-rose-600 transition-colors"></i>
+                            </div> -->
+
+                            <!-- Shopping Cart Icon with Item Count -->
+                            <div class="w-6 h-6 flex items-center justify-center cursor-pointer relative">
+                                <i class="ri-shopping-cart-line text-gray-600 hover:text-rose-600 transition-colors"></i>
+                                <span class="absolute -top-2 -right-2 bg-rose-500 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">1</span>
+                            </div>
+                            <!-- Sign in Now Button -->
+                            <button class="inline-flex items-center justify-center font-medium transition-colors whitespace-nowrap cursor-pointer bg-rose-500 text-white hover:bg-rose-600 px-4 py-2 text-sm rounded-lg">Sign in</button>
+                        </div>
+
+                        <!-- Mobile Menu Button (Hamburger Icon) -->
+                        <div class="md:hidden">
+                            <button class="text-gray-600 hover:text-rose-600 transition-colors">
+                                <div class="w-6 h-6 flex items-center justify-center">
+                                    <i class="ri-menu-line"></i>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Breadcrumbs -->
+            <div class="bg-gray-50 py-4">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <nav class="flex items-center space-x-2 text-sm" aria-label="Breadcrumb">
+                        <a class="text-gray-500 hover:text-gray-700" href="../index.html" data-discover="true">Home</a>
+                        <i class="ri-arrow-right-s-line text-gray-400"></i>
+                        <!-- <a class="text-gray-500 hover:text-gray-700" href="/preview/aa27a765-101a-4fd5-a6c5-e8c66e45a4f0/2956086/products" data-discover="true">Body Care</a> -->
+                        <!-- <i class="ri-arrow-right-s-line text-gray-400"></i> -->
+                        <span class="text-gray-900">Firming Body Cream</span>
+                    </nav>
+                </div>
+            </div>
+
+            <!-- Main product area -->
+            <main class="py-12">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                        <!-- Product images column -->
+                        <div class="space-y-4">
+                            <!-- Main product image -->
+                            <div class="aspect-square bg-gray-100 rounded-2xl overflow-hidden">
+                                <img alt="Hydrating Face Mask" class="w-full h-full object-cover" src="https://readdy.ai/api/search-image?query=luxury%20hydrating%20face%20mask%20jar%20with%20elegant%20white%20and%20rose%20gold%20packaging%2C%20premium%20skincare%20product%20with%20natural%20ingredients%2C%20clean%20white%20background%2C%20professional%20product%20photography&amp;width=400&amp;height=400&amp;seq=9&amp;orientation=squarish">
+                            </div>
+
+                            <!-- Thumbnail images -->
+                            <div class="grid grid-cols-4 gap-4">
+                                <button class="aspect-square rounded-lg overflow-hidden border-2 transition-colors border-rose-500" aria-label="View image 1">
+                                    <img alt="Product view 1" class="w-full h-full object-cover" src="https://readdy.ai/api/search-image?query=luxury%20hydrating%20face%20mask%20jar%20with%20elegant%20white%20and%20rose%20gold%20packaging%2C%20premium%20skincare%20product%20with%20natural%20ingredients%2C%20clean%20white%20background%2C%20professional%20product%20photography&amp;width=400&amp;height=400&amp;seq=9&amp;orientation=squarish">
+                                </button>
+                                <button class="aspect-square rounded-lg overflow-hidden border-2 transition-colors border-gray-200" aria-label="View image 2">
+                                    <img alt="Product view 2" class="w-full h-full object-cover" src="https://readdy.ai/api/search-image?query=luxury%20premium%20skincare%20cream%20jar%20with%20elegant%20white%20and%20rose%20gold%20packaging%20on%20clean%20white%20background%2C%20professional%20product%20photography%2C%20soft%20natural%20lighting%2C%20minimalist%20aesthetic%2C%20premium%20beauty%20product%20with%20botanical%20elements&amp;width=400&amp;height=400&amp;seq=1&amp;orientation=squarish">
+                                </button>
+                                <button class="aspect-square rounded-lg overflow-hidden border-2 transition-colors border-gray-200" aria-label="View image 3">
+                                    <img alt="Product view 3" class="w-full h-full object-cover" src="https://readdy.ai/api/search-image?query=skincare%20cream%20texture%20close%20up%20shot%2C%20smooth%20white%20cream%20with%20rose%20gold%20shimmer%2C%20luxury%20cosmetic%20texture%2C%20macro%20photography%2C%20clean%20white%20background%2C%20premium%20beauty%20ingredients%20visible&amp;width=400&amp;height=400&amp;seq=2&amp;orientation=squarish">
+                                </button>
+                                <button class="aspect-square rounded-lg overflow-hidden border-2 transition-colors border-gray-200" aria-label="View image 4">
+                                    <img alt="Product view 4" class="w-full h-full object-cover" src="https://readdy.ai/api/search-image?query=skincare%20product%20ingredients%20display%2C%20natural%20botanical%20extracts%20like%20rose%20petals%2C%20collagen%20peptides%2C%20hyaluronic%20acid%2C%20premium%20beauty%20ingredients%20arranged%20elegantly%20on%20white%20background%20with%20soft%20lighting&amp;width=400&amp;height=400&amp;seq=3&amp;orientation=squarish">
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Product details column -->
+                        <div class="space-y-6">
+                            <section>
+                                <!-- Badge and title -->
+                                <div class="flex items-center space-x-2 mb-2">
+                                    <span class="bg-rose-100 text-rose-600 px-2 py-1 rounded text-sm font-medium">Best Seller</span>
+                                </div>
+
+                                <h1 class="text-3xl font-bold text-gray-900 mb-4">Firming Body Cream</h1>
+
+                                <!-- Rating and reviews -->
+                                
+                                <!-- <div class="flex items-center mb-4">
+                                    <div class="flex text-yellow-400 mr-2">
+                                        <i class="ri-star-fill text-lg"></i>
+                                        <i class="ri-star-fill text-lg"></i>
+                                        <i class="ri-star-fill text-lg"></i>
+                                        <i class="ri-star-fill text-lg"></i>
+                                        <i class="ri-star-line text-lg"></i>
+                                    </div>
+                                    <span class="text-gray-600">4.8 (324 reviews)</span>
+                                </div> -->
+
+                                <!-- Price -->
+                                <div class="flex items-center space-x-4 mb-6">
+                                    <span class="text-3xl font-bold text-gray-900">$45.99</span>
+                                    <span class="text-xl text-gray-500 line-through">$99.99</span>
+                                    <span class="bg-red-100 text-red-600 px-2 py-1 rounded text-sm font-medium">20% OFF</span>
+                                </div>
+
+                                <p class="text-gray-600 leading-relaxed">Transform your body with our advanced firming cream. This luxurious formula combines powerful peptides, collagen-boosting ingredients, and natural extracts to visibly improve skin firmness and elasticity. Perfect for targeting areas prone to cellulite and sagging skin.</p>
+                            </section>
+
+                            <!-- Size options -->
+                            
+                            <!-- <section>
+                                <h3 class="text-lg font-medium text-gray-900 mb-3">Size</h3>
+                                <div class="flex space-x-3">
+                                    <button class="px-4 py-2 rounded-lg border transition-colors border-gray-300 text-gray-700 hover:border-gray-400">30ml</button>
+                                    <button class="px-4 py-2 rounded-lg border transition-colors border-rose-500 bg-rose-50 text-rose-600">50ml</button>
+                                    <button class="px-4 py-2 rounded-lg border transition-colors border-gray-300 text-gray-700 hover:border-gray-400">100ml</button>
+                                    <button class="px-4 py-2 rounded-lg border transition-colors border-gray-300 text-gray-700 hover:border-gray-400">200ml</button>
+                                </div>
+                            </section> -->
+
+                            <!-- Quantity selector -->
+                            <section>
+                                <h3 class="text-lg font-medium text-gray-900 mb-3">Quantity</h3>
+                                <div class="flex items-center space-x-4">
+                                    <div class="flex items-center border border-gray-300 rounded-lg">
+                                        <button class="p-2 hover:bg-gray-50 transition-colors" aria-label="Decrease quantity">
+                                            <i class="ri-subtract-line text-gray-600"></i>
+                                        </button>
+                                        <span class="px-4 py-2 text-gray-900 font-medium">1</span>
+                                        <!-- Fixed class typo here: hover->bg -> hover:bg -->
+                                        <button class="p-2 hover:bg-gray-50 transition-colors" aria-label="Increase quantity">
+                                            <i class="ri-add-line text-gray-600"></i>
+                                        </button>
+                                    </div>
+                                    <span class="text-gray-600">In stock</span>
+                                </div>
+                            </section>
+
+                            <!-- Actions -->
+                            <div class="space-y-4">
+                                <button class="w-full bg-rose-600 text-white py-4 px-6 rounded-xl hover:bg-rose-700 transition-colors font-medium text-lg whitespace-nowrap">Add to Cart</button>
+                                <button class="w-full border border-gray-300 text-gray-700 py-4 px-6 rounded-xl hover:bg-gray-50 transition-colors font-medium whitespace-nowrap">Buy Now</button>
+                            </div>
+
+                            <!-- Shipping / guarantees -->
+                            <div class="grid grid-cols-2 gap-4 pt-6 border-t border-gray-200">
+                                <div class="flex items-center space-x-2">
+                                    <i class="ri-truck-line text-rose-600"></i>
+                                    <span class="text-sm text-gray-600">Free shipping over $75</span>
+                                </div>
+                                <div class="flex items-center space-x-2">
+                                    <i class="ri-shield-check-line text-rose-600"></i>
+                                    <span class="text-sm text-gray-600">30-day return policy</span>
+                                </div>
+                                <div class="flex items-center space-x-2">
+                                    <i class="ri-award-line text-rose-600"></i>
+                                    <span class="text-sm text-gray-600">Quality guaranteed</span>
+                                </div>
+                                <div class="flex items-center space-x-2">
+                                    <i class="ri-customer-service-line text-rose-600"></i>
+                                    <span class="text-sm text-gray-600">24/7 customer support</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+
+            <!-- Product tabs: Benefits / Ingredients / How to Use -->
+            <div class="bg-gray-50 py-12">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+                        <div class="border-b border-gray-200">
+                            <nav class="flex" role="tablist" aria-label="Product tabs">
+                                <button class="tab px-6 py-4 text-sm font-medium transition-colors whitespace-nowrap text-rose-600 border-b-2 border-rose-600"
+                                        data-tab="benefits" role="tab" aria-controls="benefits">Benefits</button>
+
+                                <button class="tab px-6 py-4 text-sm font-medium transition-colors whitespace-nowrap text-gray-500 hover:text-gray-700"
+                                        data-tab="ingredients" role="tab" aria-controls="ingredients">Ingredients</button>
+
+                                <button class="tab px-6 py-4 text-sm font-medium transition-colors whitespace-nowrap text-gray-500 hover:text-gray-700"
+                                        data-tab="howtouse" role="tab" aria-controls="howtouse">How to Use</button>
+                            </nav>
+                        </div>
+                        <!-- TAB CONTENT -->
+                        <!-- TAB CONTENT -->
+                        <div class="p-8">
+                            <!-- Benefits -->
+                            <div id="benefits" class="tab-content">
+                                <div class="p-8">
+                                    <h3 class="text-xl font-semibold text-gray-900 mb-6">Key Benefits</h3>
+
+                                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                        <div>
+                                            <ul class="space-y-3">
+                                                <li class="flex items-start space-x-3">
+                                                    <i class="ri-check-line text-rose-600 mt-1"></i>
+                                                    <span class="text-gray-700">Improves skin firmness and elasticity</span>
+                                                </li>
+                                                <li class="flex items-start space-x-3">
+                                                    <i class="ri-check-line text-rose-600 mt-1"></i>
+                                                    <span class="text-gray-700">Reduces appearance of cellulite</span>
+                                                </li>
+                                                <li class="flex items-start space-x-3">
+                                                    <i class="ri-check-line text-rose-600 mt-1"></i>
+                                                    <span class="text-gray-700">Deeply moisturizes and nourishes</span>
+                                                </li>
+                                                <li class="flex items-start space-x-3">
+                                                    <i class="ri-check-line text-rose-600 mt-1"></i>
+                                                    <span class="text-gray-700">Enhances collagen production</span>
+                                                </li>
+                                                <li class="flex items-start space-x-3">
+                                                    <i class="ri-check-line text-rose-600 mt-1"></i>
+                                                    <span class="text-gray-700">Smooths and tones skin texture</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                        <!-- Clinical results summary -->
+                                        <div class="bg-rose-50 p-6 rounded-xl">
+                                            <h4 class="font-semibold text-gray-900 mb-3">Clinical Results</h4>
+                                            <div class="space-y-2">
+                                                <div class="flex justify-between">
+                                                    <span class="text-gray-600">Improved firmness</span>
+                                                    <span class="font-semibold text-rose-600">87%</span>
+                                                </div>
+                                                <div class="flex justify-between">
+                                                    <span class="text-gray-600">Reduced cellulite appearance</span>
+                                                    <span class="font-semibold text-rose-600">73%</span>
+                                                </div>
+                                                <div class="flex justify-between">
+                                                    <span class="text-gray-600">Enhanced skin texture</span>
+                                                    <span class="font-semibold text-rose-600">92%</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Ingredients -->
+                            <div id="ingredients" class="tab-content hidden">
+                                <div class="p-8">
+                                    <h3 class="text-xl font-semibold text-gray-900 mb-6">Ingredients</h3>
+
+                                    <h3 class="text-xl font-semibold text-gray-900 mb-6">Active Ingredients</h3>
+                                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                        <div class="flex items-center justify-between p-4 bg-gray-50 rounded-lg">
+                                            <div>
+                                                <h4 class="font-medium text-gray-900">Collagen Peptides</h4>
+                                                <p class="text-sm text-gray-600">Firming</p>
+                                            </div>
+                                            <span class="bg-rose-100 text-rose-600 px-2 py-1 rounded text-xs font-medium">Firming</span>
+                                        </div>
+
+                                        <div class="flex items-center justify-between p-4 bg-gray-50 rounded-lg">
+                                            <div>
+                                                <h4 class="font-medium text-gray-900">Hyaluronic Acid</h4>
+                                                <p class="text-sm text-gray-600">Hydrating</p>
+                                            </div>
+                                            <span class="bg-rose-100 text-rose-600 px-2 py-1 rounded text-xs font-medium">Hydrating</span>
+                                        </div>
+
+                                        <div class="flex items-center justify-between p-4 bg-gray-50 rounded-lg">
+                                            <div>
+                                                <h4 class="font-medium text-gray-900">Shea Butter</h4>
+                                                <p class="text-sm text-gray-600">Nourishing</p>
+                                            </div>
+                                            <span class="bg-rose-100 text-rose-600 px-2 py-1 rounded text-xs font-medium">Nourishing</span>
+                                        </div>
+
+                                        <div class="flex items-center justify-between p-4 bg-gray-50 rounded-lg">
+                                            <div>
+                                                <h4 class="font-medium text-gray-900">Caffeine Extract</h4>
+                                                <p class="text-sm text-gray-600">Toning</p>
+                                            </div>
+                                            <span class="bg-rose-100 text-rose-600 px-2 py-1 rounded text-xs font-medium">Toning</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- How to Use -->
+                            <div id="howtouse" class="tab-content hidden">
+                                <div class="p-8">
+                                    <h3 class="text-xl font-semibold text-gray-900 mb-6">How to Use</h3>
+
+                                    <div class="space-y-4">
+                                        <div class="flex items-start space-x-4">
+                                            <div class="w-8 h-8 bg-rose-100 text-rose-600 rounded-full flex items-center justify-center font-semibold text-sm">1</div>
+                                            <div>
+                                                <h4 class="font-medium text-gray-900 mb-1">Clean your skin</h4>
+                                                <p class="text-gray-600">Start with clean, dry skin. Massage in circular motions until fully absorbed.</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="flex items-start space-x-4">
+                                            <div class="w-8 h-8 bg-rose-100 text-rose-600 rounded-full flex items-center justify-center font-semibold text-sm">2</div>
+                                            <div>
+                                                <h4 class="font-medium text-gray-900 mb-1">Apply generously</h4>
+                                                <p class="text-gray-600">Use twice daily for best results.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Related / recommended products -->
+
+            <!-- <div class="py-16">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">You Might Also Like</h2>
+
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8"> -->
+
+                        <!-- Card 1 -->
+
+                        <!-- <article class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 group">
+                            <div class="relative">
+                                <a href="/preview/aa27a765-101a-4fd5-a6c5-e8c66e45a4f0/2956086/product/1" data-discover="true">
+                                    <img alt="Vitamin C Brightening Serum" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300" src="https://readdy.ai/api/search-image?query=luxury%20vitamin%20C%20serum%20bottle%20with%20elegant%20dropper%2C%20premium%20skincare%20product%20with%20bright%20orange%20and%20white%20packaging%2C%20clean%20white%20background%2C%20professional%20product%20photography%2C%20soft%20natural%20lighting&amp;width=400&amp;height=400&amp;seq=5&amp;orientation=squarish">
+                                </a>
+                                <button class="absolute top-4 right-4 w-10 h-10 bg-white rounded-full flex items-center justify-center shadow-md hover:shadow-lg transition-shadow duration-200" aria-label="Add to wishlist">
+                                    <i class="ri-heart-line text-gray-400 text-lg"></i>
+                                </button>
+                            </div>
+
+                            <div class="p-6">
+                                <a href="/preview/aa27a765-101a-4fd5-a6c5-e8c66e45a4f0/2956086/product/1" data-discover="true">
+                                    <h3 class="text-lg font-semibold text-gray-900 mb-2 line-clamp-2 hover:text-rose-600 transition-colors">Vitamin C Brightening Serum</h3>
+                                </a>
+
+                                <div class="flex items-center mb-3 cursor-pointer hover:opacity-80 transition-opacity">
+                                    <div class="flex text-yellow-400 mr-2" aria-hidden="true">
+                                        <i class="ri-star-fill text-sm"></i>
+                                        <i class="ri-star-fill text-sm"></i>
+                                        <i class="ri-star-fill text-sm"></i>
+                                        <i class="ri-star-fill text-sm"></i>
+                                        <i class="ri-star-line text-sm"></i>
+                                    </div>
+                                    <span class="text-gray-600 text-sm">()</span>
+                                </div>
+
+                                <div class="flex items-center justify-between mb-4">
+                                    <div class="flex items-center space-x-2">
+                                        <span class="text-2xl font-bold text-gray-900">$89.99</span>
+                                        <span class="text-lg text-gray-500 line-through">$119.99</span>
+                                    </div>
+                                </div>
+
+                                <button class="w-full bg-rose-600 text-white py-3 px-6 rounded-xl hover:bg-rose-700 transition-colors duration-200 font-medium whitespace-nowrap">Add to Cart</button>
+                            </div>
+                        </article> -->
+
+                        <!-- Card 2 -->
+
+                        <!-- <article class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 group">
+                            <div class="relative">
+                                <a href="/preview/aa27a765-101a-4fd5-a6c5-e8c66e45a4f0/2956086/product/2" data-discover="true">
+                                    <img alt="Nourishing Hair Growth Oil" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300" src="https://readdy.ai/api/search-image?query=premium%20hair%20growth%20oil%20bottle%20with%20elegant%20amber%20glass%20and%20rose%20gold%20cap%2C%20natural%20botanical%20ingredients%20visible%2C%20clean%20white%20background%2C%20professional%20product%20photography%2C%20soft%20lighting&amp;width=400&amp;height=400&amp;seq=6&amp;orientation=squarish">
+                                </a>
+                                <button class="absolute top-4 right-4 w-10 h-10 bg-white rounded-full flex items-center justify-center shadow-md hover:shadow-lg transition-shadow duration-200" aria-label="Add to wishlist">
+                                    <i class="ri-heart-line text-gray-400 text-lg"></i>
+                                </button>
+                            </div>
+
+                            <div class="p-6">
+                                <a href="/preview/aa27a765-101a-4fd5-a6c5-e8c66e45a4f0/2956086/product/2" data-discover="true">
+                                    <h3 class="text-lg font-semibold text-gray-900 mb-2 line-clamp-2 hover:text-rose-600 transition-colors">Nourishing Hair Growth Oil</h3>
+                                </a>
+
+                                <div class="flex items-center mb-3 cursor-pointer hover:opacity-80 transition-opacity">
+                                    <div class="flex text-yellow-400 mr-2" aria-hidden="true">
+                                        <i class="ri-star-fill text-sm"></i>
+                                        <i class="ri-star-fill text-sm"></i>
+                                        <i class="ri-star-fill text-sm"></i>
+                                        <i class="ri-star-fill text-sm"></i>
+                                        <i class="ri-star-line text-sm"></i>
+                                    </div>
+                                    <span class="text-gray-600 text-sm">()</span>
+                                </div>
+
+                                <div class="flex items-center justify-between mb-4">
+                                    <div class="flex items-center space-x-2">
+                                        <span class="text-2xl font-bold text-gray-900">$64.99</span>
+                                        <span class="text-lg text-gray-500 line-through">$84.99</span>
+                                    </div>
+                                </div>
+
+                                <button class="w-full bg-rose-600 text-white py-3 px-6 rounded-xl hover:bg-rose-700 transition-colors duration-200 font-medium whitespace-nowrap">Add to Cart</button>
+                            </div>
+                        </article> -->
+
+                        <!-- Card 3 -->
+
+                        <!-- <article class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 group">
+                            <div class="relative">
+                                <a href="/preview/aa27a765-101a-4fd5-a6c5-e8c66e45a4f0/2956086/product/3" data-discover="true">
+                                    <img alt="Anti-Aging Retinol Cream" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300" src="https://readdy.ai/api/search-image?query=luxury%20anti-aging%20retinol%20cream%20jar%20with%20elegant%20white%20and%20rose%20gold%20packaging%2C%20premium%20skincare%20product%20with%20sophisticated%20design%2C%20clean%20white%20background%2C%20professional%20product%20photography&amp;width=400&amp;height=400&amp;seq=7&amp;orientation=squarish">
+                                </a>
+                                <button class="absolute top-4 right-4 w-10 h-10 bg-white rounded-full flex items-center justify-center shadow-md hover:shadow-lg transition-shadow duration-200" aria-label="Add to wishlist">
+                                    <i class="ri-heart-line text-gray-400 text-lg"></i>
+                                </button>
+                            </div>
+
+                            <div class="p-6">
+                                <a href="/preview/aa27a765-101a-4fd5-a6c5-e8c66e45a4f0/2956086/product/3" data-discover="true">
+                                    <h3 class="text-lg font-semibold text-gray-900 mb-2 line-clamp-2 hover:text-rose-600 transition-colors">Anti-Aging Retinol Cream</h3>
+                                </a>
+
+                                <div class="flex items-center mb-3 cursor-pointer hover:opacity-80 transition-opacity">
+                                    <div class="flex text-yellow-400 mr-2" aria-hidden="true">
+                                        <i class="ri-star-fill text-sm"></i>
+                                        <i class="ri-star-fill text-sm"></i>
+                                        <i class="ri-star-fill text-sm"></i>
+                                        <i class="ri-star-fill text-sm"></i>
+                                        <i class="ri-star-line text-sm"></i>
+                                    </div>
+                                    <span class="text-gray-600 text-sm">()</span>
+                                </div>
+
+                                <div class="flex items-center justify-between mb-4">
+                                    <div class="flex items-center space-x-2">
+                                        <span class="text-2xl font-bold text-gray-900">$129.99</span>
+                                        <span class="text-lg text-gray-500 line-through">$159.99</span>
+                                    </div>
+                                </div>
+
+                                <button class="w-full bg-rose-600 text-white py-3 px-6 rounded-xl hover:bg-rose-700 transition-colors duration-200 font-medium whitespace-nowrap">Add to Cart</button>
+                            </div>
+                        </article> -->
+                    <!-- </div>
+                </div>
+            </div> -->
+
+            <!-- Footer -->
+            <footer class="bg-gray-50 pt-16 pb-8">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+                    <!-- Footer main grid -->
+                    <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+        
+                    <!-- Brand info and social media -->
+                    <div>
+                        <h3 class="text-2xl font-bold text-rose-600 mb-4" style="font-family: Pacifico, serif;">BeNatural</h3>
+                        <p class="text-gray-600 mb-4">
+                        Your trusted partner for premium skincare, haircare, and body care products. Discover the beauty within you.
+                        </p>
+                        <div class="flex space-x-4">
+                        <div class="w-10 h-10 flex items-center justify-center bg-rose-100 text-rose-600 rounded-full cursor-pointer hover:bg-rose-500 hover:text-white transition-colors">
+                            <i class="ri-facebook-fill"></i>
+                        </div>
+                        <div class="w-10 h-10 flex items-center justify-center bg-rose-100 text-rose-600 rounded-full cursor-pointer hover:bg-rose-500 hover:text-white transition-colors">
+                            <i class="ri-instagram-line"></i>
+                        </div>
+                        <div class="w-10 h-10 flex items-center justify-center bg-rose-100 text-rose-600 rounded-full cursor-pointer hover:bg-rose-500 hover:text-white transition-colors">
+                            <i class="ri-twitter-line"></i>
+                        </div>
+                        <div class="w-10 h-10 flex items-center justify-center bg-rose-100 text-rose-600 rounded-full cursor-pointer hover:bg-rose-500 hover:text-white transition-colors">
+                            <i class="ri-youtube-line"></i>
+                        </div>
+                        </div>
+                    </div>
+        
+                    <!-- Quick links -->
+                    <div>
+                        <h4 class="font-semibold text-gray-900 mb-4">Quick Links</h4>
+                        <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-600 hover:text-rose-600 transition-colors cursor-pointer">Home</a></li>
+                        <li><a href="#skincare" class="text-gray-600 hover:text-rose-600 transition-colors cursor-pointer">Skincare</a></li>
+                        <li><a href="#haircare" class="text-gray-600 hover:text-rose-600 transition-colors cursor-pointer">Haircare</a></li>
+                        <li><a href="#bodycare" class="text-gray-600 hover:text-rose-600 transition-colors cursor-pointer">Body Care</a></li>
+                        <li><a href="#about" class="text-gray-600 hover:text-rose-600 transition-colors cursor-pointer">About Us</a></li>
+                        <li><a href="https://wa.me/+201021693431?text=from BeNatural can you assist me!" class="text-gray-600 hover:text-rose-600 transition-colors cursor-pointer">Made with Alhadydy</a></li>
+                        </ul>
+                    </div>
+        
+                    <!-- Customer care -->
+                    <div>
+                        <h4 class="font-semibold text-gray-900 mb-4">Customer Care</h4>
+                        <ul class="space-y-2">
+                        <li><a href="#contact" class="text-gray-600 hover:text-rose-600 transition-colors cursor-pointer">Contact Us</a></li>
+                        <li><a href="#shipping" class="text-gray-600 hover:text-rose-600 transition-colors cursor-pointer">Shipping Info</a></li>
+                        <li><a href="#returns" class="text-gray-600 hover:text-rose-600 transition-colors cursor-pointer">Returns</a></li>
+                        <li><a href="#faq" class="text-gray-600 hover:text-rose-600 transition-colors cursor-pointer">FAQ</a></li>
+                        <li><a href="#support" class="text-gray-600 hover:text-rose-600 transition-colors cursor-pointer">Support</a></li>
+                        </ul>
+                    </div>
+        
+                    <!-- Newsletter subscription -->
+                    <div>
+                        <h4 class="font-semibold text-gray-900 mb-4">Newsletter</h4>
+                        <p class="text-gray-600 mb-4">Subscribe to get updates on new products and exclusive offers.</p>
+                        <div class="flex">
+                        <input
+                            placeholder="Your email"
+                            class="flex-1 px-4 py-2 border border-gray-300 rounded-l-lg focus:outline-none focus:ring-2 focus:ring-rose-500 focus:border-transparent text-sm"
+                            type="email"
+                        >
+                        <button class="bg-rose-500 text-white px-6 py-2 rounded-r-lg hover:bg-rose-600 transition-colors whitespace-nowrap cursor-pointer">
+                            Subscribe
+                        </button>
+                        </div>
+                    </div>
+        
+                    </div>
+        
+                    <!-- Footer bottom bar -->
+                    <div class="border-t pt-8">
+                    <div class="flex flex-col md:flex-row justify-between items-center">
+                        <p class="text-gray-600 text-sm">© 2024 BeNatural. All rights reserved.</p>
+                        <div class="flex space-x-6 mt-4 md:mt-0">
+                        <a href="#privacy" class="text-gray-600 hover:text-rose-600 text-sm transition-colors cursor-pointer">Privacy Policy</a>
+                        <a href="#terms" class="text-gray-600 hover:text-rose-600 text-sm transition-colors cursor-pointer">Terms of Service</a>
+                        <a href="#cookies" class="text-gray-600 hover:text-rose-600 text-sm transition-colors cursor-pointer">Cookie Policy</a>
+                        </div>
+                    </div>
+                    </div>
+        
+                </div>
+            </footer>
+
+
+        </div>
+    </div>
+    <script>
+        // Tab switching logic
+        const tabs = document.querySelectorAll('.tab');
+        const contents = document.querySelectorAll('.tab-content');
+
+        tabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                // Remove active styles from all buttons
+                tabs.forEach(btn => {
+                    btn.classList.remove('text-rose-600', 'border-b-2', 'border-rose-600');
+                    btn.classList.add('text-gray-500');
+                });
+
+                // Hide all content
+                contents.forEach(c => c.classList.add('hidden'));
+
+                // Add active style to clicked tab
+                tab.classList.add('text-rose-600', 'border-b-2', 'border-rose-600');
+                tab.classList.remove('text-gray-500');
+
+                // Show corresponding content
+                const target = document.getElementById(tab.dataset.tab);
+                if (target) target.classList.remove('hidden');
+            });
+        });
+    </script>
+    <!-- Assistant widget (deferred) -->
+    <!-- <script src="https://readdy.ai/api/public/assistant/widget?projectId=PROJECT_ID_PLACEHOLDER" mode="hybrid" voice-show-transcript="true" theme="light" size="compact" accent-color="#14B8A6" button-base-color="#000000" button-accent-color="#FFFFFF" defer=""></script> -->
+</body>
+</html>
