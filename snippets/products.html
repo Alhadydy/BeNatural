@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- ===== Document Metadata ===== -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BeNatural</title>
+
+    <!-- ===== Favicon ===== -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../images/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <!-- ===== Google Fonts ===== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+    <!-- ===== Icon Libraries ===== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.5.0/remixicon.min.css">
+
+    <!-- ===== Custom Styles ===== -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/Tailwind.css">
+  </head>
+  <body>
+    <div id="root">
+      <div class="min-h-screen bg-white">
+
+        <!-- ================= HEADER ================= -->
+          <header class="bg-white shadow-sm">
+              <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                  <div class="flex justify-between items-center h-16">
+                      <!-- Logo/Brand Name -->
+                      <a href="../index.html" class="flex items-center">
+                        <h1 class="text-2xl font-bold text-rose-600" style="font-family: Pacifico, serif;">BeNatural</h1>
+                      </a>
+
+                      <!-- Desktop Navigation Menu -->
+                      <nav class="hidden md:flex space-x-8">
+                          <a href="../index.html" class="text-gray-700 hover:text-rose-600 transition-colors cursor-pointer">Home</a>
+                          <a href="products.html" class="text-gray-700 hover:text-rose-600 transition-colors cursor-pointer">Skincare</a>
+                          <a href="products.html" class="text-gray-700 hover:text-rose-600 transition-colors cursor-pointer">Haircare</a>
+                          <a href="products.html" class="text-gray-700 hover:text-rose-600 transition-colors cursor-pointer">Body Care</a>
+                          <a href="#about" class="text-gray-700 hover:text-rose-600 transition-colors cursor-pointer">About</a>
+                          <a href="#contact" class="text-gray-700 hover:text-rose-600 transition-colors cursor-pointer">Contact</a>
+                      </nav>
+
+                      <!-- Desktop Utility Icons (Search, Cart) and Call to Action Button -->
+                        <div class="hidden md:flex items-center space-x-4">
+                          <!-- Search Icon -->
+                          
+                          <!-- <div class="w-6 h-6 flex items-center justify-center cursor-pointer">
+                              <i class="ri-search-line text-gray-600 hover:text-rose-600 transition-colors"></i>
+                          </div> -->
+
+                          <!-- Shopping Cart Icon with Item Count -->
+                          <div class="w-6 h-6 flex items-center justify-center cursor-pointer relative">
+                              <i class="ri-shopping-cart-line text-gray-600 hover:text-rose-600 transition-colors"></i>
+                              <span class="absolute -top-2 -right-2 bg-rose-500 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">1</span>
+                          </div>
+                          <!-- Shop Now Button -->
+                          <button class="inline-flex items-center justify-center font-medium transition-colors whitespace-nowrap cursor-pointer bg-rose-500 text-white hover:bg-rose-600 px-4 py-2 text-sm rounded-lg">Sign in</button>
+                        </div>
+
+                      <!-- Mobile Menu Button (Hamburger Icon) -->
+                      <div class="md:hidden">
+                          <button class="text-gray-600 hover:text-rose-600 transition-colors">
+                              <div class="w-6 h-6 flex items-center justify-center">
+                                  <i class="ri-menu-line"></i>
+                              </div>
+                          </button>
+                      </div>
+                  </div>
+              </div>
+          </header>
+        <!-- =============== END HEADER =============== -->
+
+        <!-- ================= HERO SECTION ================= -->
+        <div class="relative py-16" style="background-image: url('../images/main-pictuer.jpg'); background-size: cover; background-position: center center; background-repeat: no-repeat;">
+          <div class="absolute inset-0 bg-white/80"></div>
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+            <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Our Products</h1>
+            <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+              Discover premium beauty products crafted to enhance your natural radiance
+            </p>
+          </div>
+        </div>
+
+        <!-- ================= FILTERS & SORTING ================= -->
+        <div class="bg-white border-b">
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+            <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+              <!-- Category Filters -->
+              <div class="flex flex-wrap gap-2">
+                <button class="px-4 py-2 rounded-full text-sm font-medium transition-colors cursor-pointer whitespace-nowrap bg-rose-500 text-white">All</button>
+                <button class="px-4 py-2 rounded-full text-sm font-medium transition-colors cursor-pointer whitespace-nowrap bg-gray-100 text-gray-700 hover:bg-gray-200">Skincare</button>
+                <button class="px-4 py-2 rounded-full text-sm font-medium transition-colors cursor-pointer whitespace-nowrap bg-gray-100 text-gray-700 hover:bg-gray-200">Haircare</button>
+                <button class="px-4 py-2 rounded-full text-sm font-medium transition-colors cursor-pointer whitespace-nowrap bg-gray-100 text-gray-700 hover:bg-gray-200">Body Care</button>
+                <button class="px-4 py-2 rounded-full text-sm font-medium transition-colors cursor-pointer whitespace-nowrap bg-gray-100 text-gray-700 hover:bg-gray-200">Makeup</button>
+                <button class="px-4 py-2 rounded-full text-sm font-medium transition-colors cursor-pointer whitespace-nowrap bg-gray-100 text-gray-700 hover:bg-gray-200">Fragrance</button>
+              </div>
+              <!-- Sorting & Filters Button -->
+              <div class="flex items-center gap-4">
+                <div class="relative">
+                  <select class="appearance-none bg-white border border-gray-300 rounded-lg px-4 py-2 pr-8 text-sm focus:ring-2 focus:ring-rose-500 focus-border-transparent cursor-pointer">
+                    <option value="featured">Featured</option>
+                    <option value="price-low">Price: Low to High</option>
+                    <option value="price-high">Price: High to Low</option>
+                    <option value="newest">Newest</option>
+                    <option value="rating">Highest Rated</option>
+                  </select>
+                  <div class="absolute right-2 top-1/2 transform -translate-y-1/2 pointer-events-none">
+                    <div class="w-4 h-4 flex items-center justify-center">
+                      <i class="ri-arrow-down-s-line text-gray-500"></i>
+                    </div>
+                  </div>
+                </div>
+                <button class="flex items-center gap-2 px-4 py-2 border border-gray-300 rounded-lg text-sm font-medium text-gray-700 hover:bg-gray-50 cursor-pointer whitespace-nowrap">
+                  <div class="w-4 h-4 flex items-center justify-center">
+                    <i class="ri-filter-line"></i>
+                  </div>
+                  Filters
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ================= PRODUCTS GRID ================= -->
+        <div class="py-12">
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between mb-8">
+              <p class="text-gray-600"></p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+              <!-- ==== PRODUCT CARD (Repeat for each product) ==== -->
+              <!-- Example Product Card: -->
+              <!--
+                Copy and reuse this block for each product.
+                Consider using a template engine or JS for dynamic rendering in a real project.
+              -->
+              <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 group">
+                <div class="relative">
+                  <a href="/preview/aa27a765-101a-4fd5-a6c5-e8c66e45a4f0/2956086/product/1" data-discover="true">
+                    <img alt="Vitamin C Brightening Serum" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300" src="../images/product-2.jpg" />
+                  </a>
+                  <button class="absolute top-4 right-4 w-10 h-10 bg-white rounded-full flex items-center justify-center shadow-md hover:shadow-lg transition-shadow duration-200">
+                    <i class="ri-heart-line text-gray-400 text-lg"></i>
+                  </button>
+                </div>
+                <div class="p-6">
+                  <a href="/preview/aa27a765-101a-4fd5-a6c5-e8c66e45a4f0/2956086/product/1" data-discover="true">
+                    <h3 class="text-lg font-semibold text-gray-900 mb-2 line-clamp-2 hover:text-rose-600 transition-colors">Vitamin C Brightening Serum</h3>
+                  </a>
+                  <div class="flex items-center mb-3 cursor-pointer hover:opacity-80 transition-opacity">
+                    <div class="flex text-yellow-400 mr-2">
+                      <i class="ri-star-fill text-sm"></i>
+                      <i class="ri-star-fill text-sm"></i>
+                      <i class="ri-star-fill text-sm"></i>
+                      <i class="ri-star-fill text-sm"></i>
+                      <i class="ri-star-line text-sm"></i>
+                    </div>
+                    <span class="text-gray-600 text-sm">()</span>
+                  </div>
+                  <div class="flex items-center justify-between mb-4">
+                    <div class="flex items-center space-x-2">
+                      <span class="text-2xl font-bold text-gray-900">$89.99</span>
+                      <span class="text-lg text-gray-500 line-through">$119.99</span>
+                    </div>
+                  </div>
+                  <button class="w-full bg-rose-600 text-white py-3 px-6 rounded-xl hover:bg-rose-700 transition-colors duration-200 font-medium whitespace-nowrap">Add to Cart</button>
+                </div>
+              </div>
+              <!-- ==== END PRODUCT CARD ==== -->
+              <!-- ...repeat product cards as needed... -->
+              <!-- (All other product cards omitted for brevity, but keep them in your file) -->
+            </div>
+            <!-- ===== Load More Button ===== -->
+            <div class="text-center mt-12">
+              <button class="inline-flex items-center justify-center font-medium transition-colors whitespace-nowrap cursor-pointer bg-rose-500 text-white hover:bg-rose-600 px-8 py-4 text-lg rounded-xl">
+                Load More Products
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- ================= FOOTER ================= -->
+          <footer class="bg-gray-50 pt-16 pb-8">
+              <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                  <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                      <!-- Footer Column 1: Brand Info and Social Media -->
+                      <div>
+                          <h3 class="text-2xl font-bold text-rose-600 mb-4" style="font-family: Pacifico, serif;">BeNatural</h3>
+                          <p class="text-gray-600 mb-4">Your trusted partner for premium skincare, haircare, and body care products. Discover the beauty within you.</p>
+                          <div class="flex space-x-4">
+                              <div class="w-10 h-10 flex items-center justify-center bg-rose-100 text-rose-600 rounded-full cursor-pointer hover:bg-rose-500 hover:text-white transition-colors">
+                                  <i class="ri-facebook-fill"></i>
+                              </div>
+                              <div class="w-10 h-10 flex items-center justify-center bg-rose-100 text-rose-600 rounded-full cursor-pointer hover:bg-rose-500 hover:text-white transition-colors">
+                                  <i class="ri-instagram-line"></i>
+                              </div>
+                              <div class="w-10 h-10 flex items-center justify-center bg-rose-100 text-rose-600 rounded-full cursor-pointer hover:bg-rose-500 hover:text-white transition-colors">
+                                  <i class="ri-twitter-line"></i>
+                              </div>
+                              <div class="w-10 h-10 flex items-center justify-center bg-rose-100 text-rose-600 rounded-full cursor-pointer hover:bg-rose-500 hover:text-white transition-colors">
+                                  <i class="ri-youtube-line"></i>
+                              </div>
+                          </div>
+                      </div>
+                      <!-- Footer Column 2: Quick Links -->
+                      <div>
+                          <h4 class="font-semibold text-gray-900 mb-4">Quick Links</h4>
+                          <ul class="space-y-2">
+                              <li><a href="#home" class="text-gray-600 hover:text-rose-600 transition-colors cursor-pointer">Home</a></li>
+                              <li><a href="#skincare" class="text-gray-600 hover:text-rose-600 transition-colors cursor-pointer">Skincare</a></li>
+                              <li><a href="#haircare" class="text-gray-600 hover:text-rose-600 transition-colors cursor-pointer">Haircare</a></li>
+                              <li><a href="#bodycare" class="text-gray-600 hover:text-rose-600 transition-colors cursor-pointer">Body Care</a></li>
+                              <li><a href="#about" class="text-gray-600 hover:text-rose-600 transition-colors cursor-pointer">About Us</a></li>
+                              <li><a href="https://wa.me/+201021693431?text=from BeNatural can you assist me!" target="_blank" class="text-gray-600 hover:text-rose-600 transition-colors cursor-pointer">Made with Alhadydy</a></li>
+                          </ul>
+                      </div>
+                      <!-- Footer Column 3: Customer Care -->
+                      <div>
+                          <h4 class="font-semibold text-gray-900 mb-4">Customer Care</h4>
+                          <ul class="space-y-2">
+                              <li><a href="#contact" class="text-gray-600 hover:text-rose-600 transition-colors cursor-pointer">Contact Us</a></li>
+                              <li><a href="#shipping" class="text-gray-600 hover:text-rose-600 transition-colors cursor-pointer">Shipping Info</a></li>
+                              <li><a href="#returns" class="text-gray-600 hover:text-rose-600 transition-colors cursor-pointer">Returns</a></li>
+                              <li><a href="#faq" class="text-gray-600 hover:text-rose-600 transition-colors cursor-pointer">FAQ</a></li>
+                              <li><a href="#support" class="text-gray-600 hover:text-rose-600 transition-colors cursor-pointer">Support</a></li>
+                          </ul>
+                      </div>
+                      <!-- Footer Column 4: Newsletter Subscription -->
+                      <div>
+                          <h4 class="font-semibold text-gray-900 mb-4">Newsletter</h4>
+                          <p class="text-gray-600 mb-4">Subscribe to get updates on new products and exclusive offers.</p>
+                          <div class="flex">
+                              <input placeholder="Your email" class="flex-1 px-4 py-2 border border-gray-300 rounded-l-lg focus:outline-none focus:ring-2 focus:ring-rose-500 focus:border-transparent text-sm" type="email">
+                              <button class="bg-rose-500 text-white px-6 py-2 rounded-r-lg hover:bg-rose-600 transition-colors whitespace-nowrap cursor-pointer">Subscribe</button>
+                          </div>
+                      </div>
+                  </div>
+                  <!-- Footer Bottom Section: Copyright and Legal Links -->
+                  <div class="border-t pt-8">
+                      <div class="flex flex-col md:flex-row justify-between items-center">
+                          <p class="text-gray-600 text-sm">© 2024 BeNatural. All rights reserved.</p>
+                          <div class="flex space-x-6 mt-4 md:mt-0">
+                              <a href="#privacy" class="text-gray-600 hover:text-rose-600 text-sm transition-colors cursor-pointer">Privacy Policy</a>
+                              <a href="#terms" class="text-gray-600 hover:text-rose-600 text-sm transition-colors cursor-pointer">Terms of Service</a>
+                              <a href="#cookies" class="text-gray-600 hover:text-rose-600 text-sm transition-colors cursor-pointer">Cookie Policy</a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </footer>
+        <!-- =============== END FOOTER =============== -->
+
+      </div>
+    </div>
+    <!-- ================== ASSISTANT WIDGET SCRIPT ================== -->
+    <script
+      src=""
+      mode="hybrid"
+      voice-show-transcript="true"
+      theme="light"
+      size="compact"
+      accent-color="#14B8A6"
+      button-base-color="#000000"
+      button-accent-color="#FFFFFF"
+      defer
+    ></script>
+  </body>
+</html>
